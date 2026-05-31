@@ -27,10 +27,10 @@
     --purple: #a78bfa;
     --red: #ff4d6d;
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -38,7 +38,7 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
+ 
   /* NOISE OVERLAY */
   body::before {
     content: '';
@@ -49,7 +49,7 @@
     z-index: 9999;
     opacity: 0.4;
   }
-
+ 
   /* NAV */
   nav {
     position: fixed;
@@ -63,7 +63,7 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(30, 42, 54, 0.6);
   }
-
+ 
   .nav-logo {
     font-family: 'DM Mono', monospace;
     font-size: 13px;
@@ -71,14 +71,14 @@
     letter-spacing: 0.08em;
     text-decoration: none;
   }
-
+ 
   .nav-links {
     display: flex;
     align-items: center;
     gap: 36px;
     list-style: none;
   }
-
+ 
   .nav-links a {
     font-size: 13px;
     color: var(--text2);
@@ -86,9 +86,9 @@
     letter-spacing: 0.04em;
     transition: color 0.2s;
   }
-
+ 
   .nav-links a:hover { color: var(--text); }
-
+ 
   .lang-btn {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -101,12 +101,12 @@
     letter-spacing: 0.08em;
     transition: all 0.2s;
   }
-
+ 
   .lang-btn:hover {
     color: var(--accent);
     border-color: var(--accent);
   }
-
+ 
   /* HERO */
   #hero {
     min-height: 100vh;
@@ -116,7 +116,7 @@
     padding: 120px 48px 80px;
     overflow: hidden;
   }
-
+ 
   .hero-grid-bg {
     position: absolute;
     inset: 0;
@@ -126,7 +126,7 @@
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black, transparent);
   }
-
+ 
   .hero-glow {
     position: absolute;
     width: 600px;
@@ -138,12 +138,12 @@
     transform: translate(-60%, -50%);
     pointer-events: none;
   }
-
+ 
   .hero-content {
     position: relative;
     max-width: 800px;
   }
-
+ 
   .hero-tag {
     display: inline-flex;
     align-items: center;
@@ -157,14 +157,14 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.1s forwards;
   }
-
+ 
   .hero-tag::before {
     content: '';
     width: 24px;
     height: 1px;
     background: var(--accent);
   }
-
+ 
   .hero-name {
     font-family: 'Syne', sans-serif;
     font-size: clamp(52px, 8vw, 96px);
@@ -175,13 +175,13 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.2s forwards;
   }
-
+ 
   .hero-name span {
     display: block;
     color: var(--text3);
     font-weight: 400;
   }
-
+ 
   .hero-desc {
     font-size: 18px;
     color: var(--text2);
@@ -192,12 +192,12 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.3s forwards;
   }
-
+ 
   .hero-desc strong {
     color: var(--text);
     font-weight: 500;
   }
-
+ 
   .hero-actions {
     display: flex;
     gap: 16px;
@@ -205,7 +205,7 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.4s forwards;
   }
-
+ 
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -220,13 +220,13 @@
     letter-spacing: 0.02em;
     transition: all 0.2s;
   }
-
+ 
   .btn-primary:hover {
     background: #fff;
     transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
   }
-
+ 
   .btn-secondary {
     display: inline-flex;
     align-items: center;
@@ -239,13 +239,13 @@
     border: 1px solid var(--border2);
     transition: all 0.2s;
   }
-
+ 
   .btn-secondary:hover {
     color: var(--text);
     border-color: var(--text3);
     transform: translateY(-2px);
   }
-
+ 
   .hero-stats {
     position: absolute;
     right: 48px;
@@ -256,11 +256,11 @@
     opacity: 0;
     animation: fadeUp 0.6s ease 0.5s forwards;
   }
-
+ 
   .stat {
     text-align: right;
   }
-
+ 
   .stat-num {
     font-family: 'Syne', sans-serif;
     font-size: 36px;
@@ -269,7 +269,7 @@
     letter-spacing: -0.04em;
     line-height: 1;
   }
-
+ 
   .stat-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -278,49 +278,49 @@
     text-transform: uppercase;
     margin-top: 4px;
   }
-
+ 
   /* SECTION COMMON */
   section {
     padding: 100px 48px;
   }
-
+ 
   .section-header {
     display: flex;
     align-items: baseline;
     gap: 20px;
     margin-bottom: 64px;
   }
-
+ 
   .section-num {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
     color: var(--accent);
     letter-spacing: 0.1em;
   }
-
+ 
   .section-title {
     font-family: 'Syne', sans-serif;
     font-size: clamp(28px, 4vw, 42px);
     font-weight: 700;
     letter-spacing: -0.02em;
   }
-
+ 
   .section-line {
     flex: 1;
     height: 1px;
     background: var(--border);
     margin-left: 12px;
   }
-
+ 
   /* PROJECTS */
   #projects { background: var(--bg2); }
-
+ 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 20px;
   }
-
+ 
   .project-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -336,7 +336,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .project-card::before {
     content: '';
     position: absolute;
@@ -346,15 +346,15 @@
     transition: opacity 0.3s;
     border-radius: 12px;
   }
-
+ 
   .project-card:hover {
     border-color: var(--border2);
     transform: translateY(-4px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   }
-
+ 
   .project-card:hover::before { opacity: 1; }
-
+ 
   .project-card-top {
     display: flex;
     align-items: flex-start;
@@ -362,7 +362,7 @@
     gap: 12px;
     position: relative;
   }
-
+ 
   .project-icon {
     width: 44px;
     height: 44px;
@@ -373,13 +373,13 @@
     font-size: 20px;
     flex-shrink: 0;
   }
-
+ 
   .project-links {
     display: flex;
     gap: 10px;
     align-items: center;
   }
-
+ 
   .project-link {
     display: flex;
     align-items: center;
@@ -394,12 +394,12 @@
     font-size: 14px;
     transition: all 0.2s;
   }
-
+ 
   .project-link:hover {
     color: var(--accent);
     border-color: var(--accent);
   }
-
+ 
   .project-badge {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -408,13 +408,13 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-
+ 
   .badge-live { background: rgba(0, 229, 160, 0.1); color: var(--green); border: 1px solid rgba(0, 229, 160, 0.2); }
   .badge-steam { background: rgba(167, 139, 250, 0.1); color: var(--purple); border: 1px solid rgba(167, 139, 250, 0.2); }
   .badge-saas { background: rgba(255, 140, 66, 0.1); color: var(--orange); border: 1px solid rgba(255, 140, 66, 0.2); }
   .badge-ai { background: rgba(0, 212, 255, 0.1); color: var(--accent); border: 1px solid rgba(0, 212, 255, 0.2); }
   .badge-tool { background: rgba(139, 157, 176, 0.1); color: var(--text2); border: 1px solid rgba(139, 157, 176, 0.2); }
-
+ 
   .project-name {
     font-family: 'Syne', sans-serif;
     font-size: 18px;
@@ -422,7 +422,7 @@
     letter-spacing: -0.01em;
     position: relative;
   }
-
+ 
   .project-desc {
     font-size: 14px;
     color: var(--text2);
@@ -430,14 +430,14 @@
     flex: 1;
     position: relative;
   }
-
+ 
   .project-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     position: relative;
   }
-
+ 
   .tech-tag {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -448,29 +448,29 @@
     border: 1px solid var(--border);
     letter-spacing: 0.04em;
   }
-
+ 
   /* FEATURED CARD */
   .project-card.featured {
     background: linear-gradient(135deg, #0f1a24 0%, #0d1117 100%);
     border-color: rgba(0, 212, 255, 0.2);
   }
-
+ 
   .project-card.featured .project-desc {
     font-size: 15px;
   }
-
+ 
   /* ABOUT */
   #about {
     background: var(--bg);
   }
-
+ 
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: start;
   }
-
+ 
   .about-photo-placeholder {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -487,19 +487,19 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .about-photo-placeholder::before {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(0,212,255,0.03) 0%, transparent 100%);
   }
-
+ 
   .placeholder-icon {
     font-size: 48px;
     opacity: 0.3;
   }
-
+ 
   .about-text h3 {
     font-family: 'Syne', sans-serif;
     font-size: 28px;
@@ -507,7 +507,7 @@
     letter-spacing: -0.02em;
     margin-bottom: 20px;
   }
-
+ 
   .about-text p {
     font-size: 16px;
     color: var(--text2);
@@ -515,30 +515,30 @@
     margin-bottom: 16px;
     font-weight: 300;
   }
-
+ 
   .about-text p strong {
     color: var(--text);
     font-weight: 500;
   }
-
+ 
   /* SKILLS */
   #skills {
     background: var(--bg2);
   }
-
+ 
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
-
+ 
   .skill-group {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 28px;
   }
-
+ 
   .skill-group-title {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
@@ -550,20 +550,20 @@
     align-items: center;
     gap: 10px;
   }
-
+ 
   .skill-group-title::after {
     content: '';
     flex: 1;
     height: 1px;
     background: var(--border);
   }
-
+ 
   .skill-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
   }
-
+ 
   .skill-tag {
     font-size: 13px;
     padding: 6px 14px;
@@ -573,21 +573,21 @@
     border: 1px solid var(--border);
     transition: all 0.2s;
   }
-
+ 
   .skill-tag:hover {
     color: var(--text);
     border-color: var(--border2);
   }
-
+ 
   /* CONTACT */
   #contact {
     background: var(--bg);
   }
-
+ 
   .contact-inner {
     max-width: 640px;
   }
-
+ 
   .contact-heading {
     font-family: 'Syne', sans-serif;
     font-size: clamp(36px, 5vw, 56px);
@@ -596,9 +596,9 @@
     line-height: 1.1;
     margin-bottom: 20px;
   }
-
+ 
   .contact-heading .accent { color: var(--accent); }
-
+ 
   .contact-sub {
     font-size: 16px;
     color: var(--text2);
@@ -606,13 +606,13 @@
     margin-bottom: 48px;
     font-weight: 300;
   }
-
+ 
   .contact-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-
+ 
   .contact-link {
     display: flex;
     align-items: center;
@@ -625,12 +625,12 @@
     color: inherit;
     transition: all 0.2s;
   }
-
+ 
   .contact-link:hover {
     border-color: var(--border2);
     transform: translateX(4px);
   }
-
+ 
   .contact-link-icon {
     width: 40px;
     height: 40px;
@@ -642,11 +642,11 @@
     font-size: 18px;
     flex-shrink: 0;
   }
-
+ 
   .contact-link-info {
     flex: 1;
   }
-
+ 
   .contact-link-label {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
@@ -655,23 +655,23 @@
     text-transform: uppercase;
     margin-bottom: 3px;
   }
-
+ 
   .contact-link-value {
     font-size: 15px;
     color: var(--text);
   }
-
+ 
   .contact-link-arrow {
     color: var(--text3);
     font-size: 18px;
     transition: transform 0.2s;
   }
-
+ 
   .contact-link:hover .contact-link-arrow {
     transform: translateX(4px);
     color: var(--accent);
   }
-
+ 
   /* FOOTER */
   footer {
     padding: 32px 48px;
@@ -684,37 +684,37 @@
     color: var(--text3);
     letter-spacing: 0.04em;
   }
-
+ 
   footer a {
     color: var(--text3);
     text-decoration: none;
     transition: color 0.2s;
   }
-
+ 
   footer a:hover { color: var(--accent); }
-
+ 
   /* SCROLL REVEAL */
   .reveal {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
-
+ 
   .reveal.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
+ 
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* LANGUAGE TOGGLE */
   body:not(.lang-tr) [data-lang="tr"] { display: none; }
   body.lang-tr [data-lang="en"] { display: none; }
-
+ 
   /* HAMBURGER BUTTON */
   .hamburger {
     display: none;
@@ -725,7 +725,7 @@
     border: none;
     padding: 4px;
   }
-
+ 
   .hamburger span {
     display: block;
     width: 22px;
@@ -734,11 +734,11 @@
     border-radius: 2px;
     transition: all 0.3s ease;
   }
-
+ 
   .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
+ 
   /* MOBILE MENU OVERLAY */
   .mobile-menu {
     display: none;
@@ -752,9 +752,9 @@
     justify-content: center;
     gap: 8px;
   }
-
+ 
   .mobile-menu.open { display: flex; }
-
+ 
   .mobile-menu a {
     font-family: 'Syne', sans-serif;
     font-size: 32px;
@@ -765,9 +765,9 @@
     padding: 12px 0;
     transition: color 0.2s;
   }
-
+ 
   .mobile-menu a:hover { color: var(--accent); }
-
+ 
   .mobile-menu .mobile-lang {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -781,25 +781,25 @@
     margin-top: 24px;
     transition: all 0.2s;
   }
-
+ 
   .mobile-menu .mobile-lang:hover {
     color: var(--accent);
     border-color: var(--accent);
   }
-
+ 
   /* FEATURED CARD — only span 2 when grid has 2+ columns */
   @media (min-width: 901px) {
     .project-card.featured {
       grid-column: span 2;
     }
   }
-
+ 
   /* ABOUT PLACEHOLDER — reasonable fixed height instead of 3/4 ratio */
   .about-photo-placeholder {
     height: 380px;
     aspect-ratio: unset;
   }
-
+ 
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 16px 24px; }
@@ -818,7 +818,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">oguzemirtopuz.dev</a>
@@ -835,7 +835,7 @@
     </button>
   </div>
 </nav>
-
+ 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
   <a href="#projects" onclick="closeMenu()" data-lang="en">Projects</a>
@@ -848,30 +848,30 @@
   <a href="#contact" onclick="closeMenu()" data-lang="tr">İletişim</a>
   <button class="mobile-lang" onclick="toggleLang()" aria-label="Switch language">TR / EN</button>
 </div>
-
+ 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
-
+ 
   <div class="hero-content">
     <div class="hero-tag">
       <span data-lang="en">14 y/o · Fullstack & Game Developer</span>
       <span data-lang="tr">14 yaşında · Fullstack & Oyun Geliştirici</span>
     </div>
-
+ 
     <h1 class="hero-name">
       Oğuz Emir
       <span>Topuz</span>
     </h1>
-
+ 
     <p class="hero-desc" data-lang="en">
       I build <strong>AI systems</strong>, <strong>SaaS tools</strong>, and <strong>games</strong> — from a self-healing cognitive OS to a multiplayer farm game on Steam. I ship real products, not side projects.
     </p>
     <p class="hero-desc" data-lang="tr">
       <strong>Yapay zeka sistemleri</strong>, <strong>SaaS araçları</strong> ve <strong>oyunlar</strong> geliştiriyorum — kendi kendini iyileştiren bir bilişsel işletim sisteminden Steam'de çok oyunculu bir çiftlik oyununa. Gerçek ürünler çıkarıyorum, sadece hobi projeleri değil.
     </p>
-
+ 
     <div class="hero-actions">
       <a href="#projects" class="btn-primary">
         <span data-lang="en">View My Work</span>
@@ -883,7 +883,7 @@
       </a>
     </div>
   </div>
-
+ 
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-num">8</div>
@@ -902,7 +902,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-header reveal">
@@ -910,11 +910,11 @@
     <h2 class="section-title" data-section-en="Projects" data-section-tr="Projeler">Projects</h2>
     <div class="section-line"></div>
   </div>
-
+ 
   <div class="projects-grid">
-
+ 
     <!-- JARVIS - Featured -->
-    <a href="https://github.com/oguzemirtopuz/My_Jarvis_Project" target="_blank" class="project-card featured reveal" aria-label="View JARVIS Cognitive OS on GitHub">
+    <a href="https://github.com/oguzemirtopuz/JARVIS-Cognitive-OS" target="_blank" class="project-card featured reveal" aria-label="View JARVIS Cognitive OS on GitHub">
       <div class="project-card-top">
         <div style="display:flex;gap:10px;align-items:center;">
           <div class="project-icon" style="background:rgba(0,212,255,0.1);">🧠</div>
@@ -940,7 +940,7 @@
         <span class="tech-tag">CustomTkinter</span>
       </div>
     </a>
-
+ 
     <!-- PyAuditor -->
     <a href="https://github.com/oguzemirtopuz/PyAuditor" target="_blank" class="project-card reveal" aria-label="View PyAuditor on GitHub">
       <div class="project-card-top">
@@ -962,7 +962,7 @@
         <span class="tech-tag">GitHub Actions</span>
       </div>
     </a>
-
+ 
     <!-- Cropocalypse -->
     <a href="https://store.steampowered.com/app/4259600/Cropocalypse/" target="_blank" class="project-card reveal" aria-label="View Cropocalypse on Steam">
       <div class="project-card-top">
@@ -983,7 +983,7 @@
         <span class="tech-tag">Steam</span>
       </div>
     </a>
-
+ 
     <!-- VocalCleaner -->
     <a href="https://vocalcleaner.onrender.com" target="_blank" class="project-card reveal" aria-label="Open VocalCleaner live app">
       <div class="project-card-top">
@@ -1004,7 +1004,7 @@
         <span class="tech-tag">Render</span>
       </div>
     </a>
-
+ 
     <!-- finish-and-click -->
     <a href="https://github.com/oguzemirtopuz/finish-and-click" target="_blank" class="project-card reveal" aria-label="View finish-and-click on GitHub">
       <div class="project-card-top">
@@ -1026,7 +1026,7 @@
         <span class="tech-tag">Vite</span>
       </div>
     </a>
-
+ 
     <!-- RankVibe -->
     <a href="https://github.com/oguzemirtopuz/RankVibe_Automation_Public" target="_blank" class="project-card reveal" aria-label="View RankVibe on GitHub">
       <div class="project-card-top">
@@ -1048,7 +1048,7 @@
         <span class="tech-tag">OpenRouter</span>
       </div>
     </a>
-
+ 
     <!-- ViralCut -->
     <a href="https://github.com/oguzemirtopuz/ViralCut" target="_blank" class="project-card reveal" aria-label="View ViralCut on GitHub">
       <div class="project-card-top">
@@ -1070,7 +1070,7 @@
         <span class="tech-tag">moviepy</span>
       </div>
     </a>
-
+ 
     <!-- YouTube-Analyse -->
     <a href="https://github.com/oguzemirtopuz/YouTube-Analyse-Pro-SaaS-Edition" target="_blank" class="project-card reveal" aria-label="View YouTube Analyse Pro on GitHub">
       <div class="project-card-top">
@@ -1092,10 +1092,10 @@
         <span class="tech-tag">pandas</span>
       </div>
     </a>
-
+ 
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-header reveal">
@@ -1103,32 +1103,32 @@
     <h2 class="section-title" data-section-en="About" data-section-tr="Hakkımda">About</h2>
     <div class="section-line"></div>
   </div>
-
+ 
   <div class="about-grid">
     <div class="about-photo-placeholder reveal">
       <div class="placeholder-icon">👤</div>
       <span data-lang="en">Photo coming soon</span>
       <span data-lang="tr">Fotoğraf yakında</span>
     </div>
-
+ 
     <div class="about-text reveal">
       <h3 data-lang="en">Building real things at 14.</h3>
       <h3 data-lang="tr">14 yaşında gerçek şeyler inşa ediyorum.</h3>
-
+ 
       <p data-lang="en">
         I'm Oğuz Emir Topuz, a <strong>14-year-old fullstack and game developer</strong> from Turkey. I started coding because I wanted to build things that actually work — not just learn syntax.
       </p>
       <p data-lang="tr">
         Ben Oğuz Emir Topuz, Türkiye'den <strong>14 yaşında bir fullstack ve oyun geliştirici</strong>. Kodlamaya sadece sözdizimi öğrenmek için değil, gerçekten çalışan şeyler inşa etmek istediğim için başladım.
       </p>
-
+ 
       <p data-lang="en">
         I work across multiple domains: <strong>AI automation</strong> (JARVIS, PyAuditor), <strong>SaaS products</strong> (finish-and-click, YouTube Analyse), <strong>developer tools</strong> (ViralCut, RankVibe), and <strong>game development</strong> (Cropocalypse on Steam).
       </p>
       <p data-lang="tr">
         Birden fazla alanda çalışıyorum: <strong>Yapay zeka otomasyonu</strong> (JARVIS, PyAuditor), <strong>SaaS ürünleri</strong> (finish-and-click, YouTube Analyse), <strong>geliştirici araçları</strong> (ViralCut, RankVibe) ve <strong>oyun geliştirme</strong> (Steam'de Cropocalypse).
       </p>
-
+ 
       <p data-lang="en">
         What drives me is the gap between idea and shipped product — I try to close that gap as fast as possible.
       </p>
@@ -1138,7 +1138,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-header reveal">
@@ -1146,7 +1146,7 @@
     <h2 class="section-title" data-section-en="Skills" data-section-tr="Beceriler">Skills</h2>
     <div class="section-line"></div>
   </div>
-
+ 
   <div class="skills-grid">
     <div class="skill-group reveal">
       <div class="skill-group-title" data-section-en="Languages" data-section-tr="Diller">Languages</div>
@@ -1158,7 +1158,7 @@
         <span class="skill-tag">SQL</span>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title" data-section-en="Frameworks &amp; Tools" data-section-tr="Framework &amp; Araçlar">Frameworks &amp; Tools</div>
       <div class="skill-tags">
@@ -1170,7 +1170,7 @@
         <span class="skill-tag">Vite</span>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title">AI / ML</div>
       <div class="skill-tags">
@@ -1182,7 +1182,7 @@
         <span class="skill-tag">AST Analysis</span>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title" data-section-en="DevOps &amp; Testing" data-section-tr="DevOps &amp; Test">DevOps &amp; Testing</div>
       <div class="skill-tags">
@@ -1193,7 +1193,7 @@
         <span class="skill-tag">Vercel</span>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title" data-section-en="Game Dev" data-section-tr="Oyun Geliştirme">Game Dev</div>
       <div class="skill-tags">
@@ -1202,7 +1202,7 @@
         <span class="skill-tag">Game Design</span>
       </div>
     </div>
-
+ 
     <div class="skill-group reveal">
       <div class="skill-group-title" data-section-en="Other" data-section-tr="Diğer">Other</div>
       <div class="skill-tags">
@@ -1216,7 +1216,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-header reveal">
@@ -1224,20 +1224,20 @@
     <h2 class="section-title" data-section-en="Contact" data-section-tr="İletişim">Contact</h2>
     <div class="section-line"></div>
   </div>
-
+ 
   <div class="contact-inner reveal">
     <h2 class="contact-heading">
       <span data-lang="en">Let's <span class="accent">connect.</span></span>
       <span data-lang="tr">İletişime <span class="accent">geçelim.</span></span>
     </h2>
-
+ 
     <p class="contact-sub" data-lang="en">
       I'm currently focused on building and shipping my own projects. If you want to follow my work or get in touch, you can reach me below.
     </p>
     <p class="contact-sub" data-lang="tr">
       Şu an kendi projelerimi geliştirmeye ve yayınlamaya odaklanıyorum. Çalışmalarımı takip etmek veya benimle iletişime geçmek istersen aşağıdan ulaşabilirsin.
     </p>
-
+ 
     <div class="contact-links">
       <a href="mailto:oguzemirtopuz10@gmail.com" class="contact-link">
         <div class="contact-link-icon">✉️</div>
@@ -1247,7 +1247,7 @@
         </div>
         <div class="contact-link-arrow">→</div>
       </a>
-
+ 
       <a href="https://github.com/oguzemirtopuz" target="_blank" class="contact-link">
         <div class="contact-link-icon">🐙</div>
         <div class="contact-link-info">
@@ -1256,7 +1256,7 @@
         </div>
         <div class="contact-link-arrow">→</div>
       </a>
-
+ 
       <a href="https://store.steampowered.com/app/4259600/Cropocalypse/" target="_blank" class="contact-link">
         <div class="contact-link-icon">🎮</div>
         <div class="contact-link-info">
@@ -1268,15 +1268,15 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
-  <span>© 2025 Oğuz Emir Topuz</span>
+  <span>© 2026 Oğuz Emir Topuz</span>
   <span data-lang="en">Built with precision — no frameworks needed</span>
   <span data-lang="tr">Özenle inşa edildi — framework'e gerek yok</span>
   <a href="https://github.com/oguzemirtopuz" target="_blank">github.com/oguzemirtopuz</a>
 </footer>
-
+ 
 <script>
   // LANGUAGE TOGGLE
   function updateSectionTitles(isTr) {
@@ -1288,14 +1288,14 @@
       btn.textContent = isTr ? 'EN / TR' : 'TR / EN';
     });
   }
-
+ 
   function toggleLang() {
     document.body.classList.toggle('lang-tr');
     const isTr = document.body.classList.contains('lang-tr');
     document.documentElement.lang = isTr ? 'tr' : 'en';
     updateSectionTitles(isTr);
   }
-
+ 
   // HAMBURGER MENU
   function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
@@ -1305,7 +1305,7 @@
     btn.setAttribute('aria-expanded', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }
-
+ 
   function closeMenu() {
     const menu = document.getElementById('mobileMenu');
     const btn = document.querySelector('.hamburger');
@@ -1314,12 +1314,12 @@
     btn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
-
+ 
   // Close mobile menu on resize to desktop
   window.addEventListener('resize', () => {
     if (window.innerWidth > 900) closeMenu();
   });
-
+ 
   // SCROLL REVEAL
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -1330,19 +1330,19 @@
       }
     });
   }, { threshold: 0.1 });
-
+ 
   reveals.forEach(el => observer.observe(el));
-
+ 
   // STAGGER PROJECT CARDS
   const cards = document.querySelectorAll('.project-card');
   cards.forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.06}s`;
   });
-
+ 
   // ACTIVE NAV
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-
+ 
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(s => {
@@ -1353,6 +1353,7 @@
     });
   });
 </script>
-
+ 
 </body>
 </html>
+ 
