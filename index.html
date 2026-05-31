@@ -790,6 +790,13 @@
  
 
  
+  /* Center last row */
+  @media (min-width: 901px) {
+    .project-card.rankvibe-center {
+      grid-column: 2;
+    }
+  }
+
   /* ABOUT PLACEHOLDER — reasonable fixed height instead of 3/4 ratio */
   .about-photo-placeholder {
     height: 380px;
@@ -937,6 +944,32 @@
       </div>
     </a>
  
+    <!-- YouTube-Analyse -->
+    <a href="https://github.com/oguzemirtopuz/YouTube-Analyse-Pro-SaaS-Edition" target="_blank" class="project-card featured reveal" aria-label="View YouTube Analyse Pro on GitHub" style="grid-column: span 2;">
+      <div class="project-card-top">
+        <div style="display:flex;gap:10px;align-items:center;">
+          <div class="project-icon" style="background:rgba(255,140,66,0.08);">📊</div>
+          <span class="project-badge badge-saas">SaaS</span>
+        </div>
+        <div class="project-links">
+          <div class="project-link">↗</div>
+        </div>
+      </div>
+      <div class="project-name">YouTube Analyse Pro</div>
+      <p class="project-desc" data-lang="en">
+        A massively scalable SaaS-grade YouTube channel analytics engine. Integrates Gemini Flash Vision for advanced thumbnail contrast evaluation, computer vision, and an interactive multi-agent AI Coach debate system to maximize content performance.
+      </p>
+      <p class="project-desc" data-lang="tr">
+        Büyük ölçekli ve SaaS kalitesinde YouTube kanal analiz motoru. Gelişmiş küçük resim kontrast değerlendirmesi, bilgisayarlı görü ve içerik performansını en üst düzeye çıkaran interaktif çoklu-ajan AI Koç tartışma sistemi ile donatılmıştır.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">Groq</span>
+        <span class="tech-tag">Gemini</span>
+        <span class="tech-tag">pandas</span>
+      </div>
+    </a>
+
     <!-- PyAuditor -->
     <a href="https://github.com/oguzemirtopuz/PyAuditor" target="_blank" class="project-card reveal" aria-label="View PyAuditor on GitHub">
       <div class="project-card-top">
@@ -1024,7 +1057,7 @@
     </a>
  
     <!-- RankVibe -->
-    <a href="https://github.com/oguzemirtopuz/RankVibe_Automation_Public" target="_blank" class="project-card reveal" aria-label="View RankVibe on GitHub">
+    <a href="https://github.com/oguzemirtopuz/RankVibe_Automation_Public" target="_blank" class="project-card rankvibe-center reveal" aria-label="View RankVibe on GitHub">
       <div class="project-card-top">
         <div style="display:flex;gap:10px;align-items:center;">
           <div class="project-icon" style="background:rgba(255,77,109,0.1);">📈</div>
@@ -1067,31 +1100,7 @@
       </div>
     </a>
  
-    <!-- YouTube-Analyse -->
-    <a href="https://github.com/oguzemirtopuz/YouTube-Analyse-Pro-SaaS-Edition" target="_blank" class="project-card featured reveal" aria-label="View YouTube Analyse Pro on GitHub" style="grid-column: span 4;">
-      <div class="project-card-top">
-        <div style="display:flex;gap:10px;align-items:center;">
-          <div class="project-icon" style="background:rgba(255,140,66,0.08);">📊</div>
-          <span class="project-badge badge-saas">SaaS</span>
-        </div>
-        <div class="project-links">
-          <div class="project-link">↗</div>
-        </div>
-      </div>
-      <div class="project-name">YouTube Analyse Pro</div>
-      <p class="project-desc" data-lang="en">
-        A massively scalable SaaS-grade YouTube channel analytics engine. Integrates Gemini Flash Vision for advanced thumbnail contrast evaluation, computer vision, and an interactive multi-agent AI Coach debate system to maximize content performance.
-      </p>
-      <p class="project-desc" data-lang="tr">
-        Büyük ölçekli ve SaaS kalitesinde YouTube kanal analiz motoru. Gelişmiş küçük resim kontrast değerlendirmesi, bilgisayarlı görü ve içerik performansını en üst düzeye çıkaran interaktif çoklu-ajan AI Koç tartışma sistemi ile donatılmıştır.
-      </p>
-      <div class="project-tech">
-        <span class="tech-tag">FastAPI</span>
-        <span class="tech-tag">Groq</span>
-        <span class="tech-tag">Gemini</span>
-        <span class="tech-tag">pandas</span>
-      </div>
-    </a>
+
  
   </div>
 </section>
