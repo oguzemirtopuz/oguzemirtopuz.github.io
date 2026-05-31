@@ -466,54 +466,27 @@
   }
  
   .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
- 
-  .about-photo-placeholder {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: var(--text3);
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    position: relative;
-    overflow: hidden;
-  }
- 
-  .about-photo-placeholder::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(0,212,255,0.03) 0%, transparent 100%);
-  }
- 
-  .placeholder-icon {
-    font-size: 48px;
-    opacity: 0.3;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
   }
  
   .about-text h3 {
     font-family: 'Syne', sans-serif;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
     letter-spacing: -0.02em;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
  
   .about-text p {
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text2);
-    line-height: 1.8;
-    margin-bottom: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
     font-weight: 300;
   }
  
@@ -790,14 +763,7 @@
  
 
  
-  /* ABOUT PLACEHOLDER — proportional square */
-  .about-photo-placeholder {
-    width: 100%;
-    max-width: 360px;
-    aspect-ratio: 1;
-    height: auto;
-    margin: 0 auto;
-  }
+
  
   /* RESPONSIVE */
   @media (max-width: 900px) {
@@ -807,8 +773,7 @@
     section { padding: 80px 24px; }
     #hero { padding: 100px 24px 80px; }
     .hero-stats { display: none; }
-    .about-grid { grid-template-columns: 1fr; }
-    .about-photo-placeholder { display: none; }
+    .about-text h3 { font-size: 28px; }
     .skills-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
     .project-card.featured { grid-column: span 1 !important; }
@@ -1110,11 +1075,7 @@
   </div>
  
   <div class="about-grid">
-    <div class="about-photo-placeholder reveal">
-      <div class="placeholder-icon">👤</div>
-      <span data-lang="en">Photo coming soon</span>
-      <span data-lang="tr">Fotoğraf yakında</span>
-    </div>
+
  
     <div class="about-text reveal">
       <h3 data-lang="en">Building real things at 15.</h3>
