@@ -787,15 +787,7 @@
     border-color: var(--accent);
   }
  
-  /* FEATURED CARD — only span 2 when grid has 2+ columns */
-  @media (min-width: 901px) {
-    .project-card.featured {
-      grid-column: span 2;
-    }
-    .project-card.featured.featured-center {
-      grid-column: 2 / span 2;
-    }
-  }
+
  
   /* ABOUT PLACEHOLDER — reasonable fixed height instead of 3/4 ratio */
   .about-photo-placeholder {
@@ -815,8 +807,7 @@
     .about-photo-placeholder { display: none; }
     .skills-grid { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
-    .project-card.featured { grid-column: span 1; }
-    .project-card.featured.featured-center { grid-column: span 1; }
+    .project-card.featured { grid-column: span 1 !important; }
     footer { flex-direction: column; gap: 12px; text-align: center; }
   }
 </style>
@@ -918,7 +909,7 @@
   <div class="projects-grid">
  
     <!-- JARVIS - Featured -->
-    <a href="https://github.com/oguzemirtopuz/JARVIS-Cognitive-OS" target="_blank" class="project-card featured reveal" aria-label="View JARVIS Cognitive OS on GitHub">
+    <a href="https://github.com/oguzemirtopuz/JARVIS-Cognitive-OS" target="_blank" class="project-card featured reveal" aria-label="View JARVIS Cognitive OS on GitHub" style="grid-column: span 2;">
       <div class="project-card-top">
         <div style="display:flex;gap:10px;align-items:center;">
           <div class="project-icon" style="background:rgba(0,212,255,0.1);">🧠</div>
@@ -1076,7 +1067,7 @@
     </a>
  
     <!-- YouTube-Analyse -->
-    <a href="https://github.com/oguzemirtopuz/YouTube-Analyse-Pro-SaaS-Edition" target="_blank" class="project-card featured featured-center reveal" aria-label="View YouTube Analyse Pro on GitHub">
+    <a href="https://github.com/oguzemirtopuz/YouTube-Analyse-Pro-SaaS-Edition" target="_blank" class="project-card featured reveal" aria-label="View YouTube Analyse Pro on GitHub" style="grid-column: 2 / span 2;">
       <div class="project-card-top">
         <div style="display:flex;gap:10px;align-items:center;">
           <div class="project-icon" style="background:rgba(255,140,66,0.08);">📊</div>
